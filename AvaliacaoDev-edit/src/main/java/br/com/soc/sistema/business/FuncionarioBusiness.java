@@ -27,9 +27,9 @@ public class FuncionarioBusiness {
 			if(funcionarioVo.getNome().isEmpty())
 				throw new IllegalArgumentException("Nome nao pode ser em branco");
 			
-			Pattern pattern = Pattern.compile("\\d+"); // compila a expressão regular
+			Pattern pattern = Pattern.compile("\\d+");
 		    Matcher matcher = pattern.matcher(funcionarioVo.getNome());
-		    if (matcher.find()) { // verifica se não há correspondências na string
+		    if (matcher.find()) {
 		    	throw new IllegalArgumentException("Nome nao pode ter números");
 		      }
 			
@@ -78,9 +78,9 @@ public class FuncionarioBusiness {
 			if(funcionarioVo.getNome().isEmpty())
 				throw new IllegalArgumentException("Nome nao pode ser em branco");
 			
-			Pattern pattern = Pattern.compile("\\d+"); // compila a expressão regular
+			Pattern pattern = Pattern.compile("\\d+"); 
 		    Matcher matcher = pattern.matcher(funcionarioVo.getNome());
-		    if (matcher.find()) { // verifica se não há correspondências na string
+		    if (matcher.find()) { 
 		    	throw new IllegalArgumentException("Nome nao pode ter números");
 		      }
 			Integer cod = Integer.parseInt(funcionarioVo.getRowid());

@@ -133,7 +133,7 @@ public class FuncionarioDao extends Dao {
 			Connection con = getConexao();
 			PreparedStatement  ps = con.prepareStatement(query.toString())){
 			
-			//int i=1;
+			
 			ps.setInt(1, codigo);
 			ps.executeUpdate();
 		}catch (SQLException e) {
